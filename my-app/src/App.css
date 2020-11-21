@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: grid;
+
+
+
+  grid-template-columns: auto auto auto auto auto auto;
+
+  width: 100%;
+  height: 99vh;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1.5rem;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .App {
+    grid-template-columns: auto;
+
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width:780px) {
+
+  .App {
+    grid-template-columns: auto auto;
+
+  }
+}
+
+/* @media only screen and (max-width: 1024px) {
+
+  .App {
+    grid-template-columns: auto auto auto;
+
+  }
+} */
